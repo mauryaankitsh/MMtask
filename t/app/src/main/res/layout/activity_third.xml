@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.aniketkumar.netcamp_app.Third">
+
+    <Button
+        android:id="@+id/bsk"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="18dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="21dp"
+        android:background="@drawable/bb" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="12dp"
+        app:srcCompat="@drawable/mtask"
+        android:layout_below="@+id/bsk"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MTASK"
+        android:gravity="center"
+        android:textSize="50dp"
+
+        android:layout_alignTop="@+id/bsk"
+        android:layout_centerHorizontal="true" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:layout_below="@+id/imageView"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_below="@+id/imageView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        >
+
+    <Button
+        android:id="@+id/mp"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/calci"
+        android:layout_alignStart="@+id/calci"
+        android:layout_below="@+id/magical"
+        android:background="@drawable/main"
+
+        android:layout_marginTop="15dp"
+        android:text="Media Player" />
+
+    <Button
+        android:id="@+id/calci"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Calculator"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/imageView"
+        android:layout_alignLeft="@+id/magical"
+        android:background="@drawable/main"
+        android:layout_alignStart="@+id/magical" />
+
+    <Button
+        android:id="@+id/camera"
+        android:layout_width="250dp"
+
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/calci"
+        android:layout_alignRight="@+id/calci"
+        android:background="@drawable/main"
+        android:layout_below="@+id/calci"
+        android:layout_marginTop="10dp"
+        android:text="Camera" />
+
+    <Button
+        android:id="@+id/magical"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+
+        android:text="Magical Musical Player"
+        android:background="@drawable/main"
+        android:layout_below="@+id/game"
+        android:layout_alignLeft="@+id/Quiz"
+        android:layout_alignStart="@+id/Quiz" />
+
+        <Button
+            android:id="@+id/Quiz"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mp"
+
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/main"
+            android:layout_marginTop="10dp"
+            android:text="Quiz" />
+
+        <Button
+        android:id="@+id/game"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Game"
+            android:background="@drawable/main"
+        android:layout_below="@+id/camera"
+        android:layout_alignLeft="@+id/camera"
+        android:layout_alignStart="@+id/camera" /></LinearLayout>
+    </ScrollView>
+
+
+
+
+
+</RelativeLayout>

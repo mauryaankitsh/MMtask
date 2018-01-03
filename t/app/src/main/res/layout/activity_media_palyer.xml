@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.aniketkumar.netcamp_app.Media_palyer"
+    android:background="@drawable/mp">
+
+    <Button
+        android:id="@+id/bsk"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="22dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="16dp"
+
+        android:background="@drawable/bb"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select song"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:layout_below="@+id/filemanager"
+        android:layout_alignRight="@+id/next"
+        android:layout_alignEnd="@+id/next"
+        android:layout_marginTop="12dp" />
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        app:srcCompat="@drawable/music"
+        android:layout_marginTop="69dp"
+        android:layout_below="@+id/bsk"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/play"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_alignEnd="@+id/bsk"
+        android:layout_alignRight="@+id/bsk"
+        android:layout_below="@+id/image"
+        android:layout_marginTop="29dp"
+        android:background="@drawable/play" />
+
+    <Button
+        android:id="@+id/pause"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_alignTop="@+id/next"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/pause" />
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/play"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:background="@drawable/next" />
+
+    <Button
+        android:id="@+id/filemanager"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+
+        android:background="@drawable/fmm"
+        android:layout_alignTop="@+id/bsk"
+        android:layout_alignLeft="@+id/next"
+        android:layout_alignStart="@+id/next" />
+
+
+</RelativeLayout>

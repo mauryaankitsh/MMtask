@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.aniketkumar.netcamp_app.Second"
+    android:background="@drawable/sign">
+
+
+    <Button
+        android:id="@+id/bsk"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginLeft="19dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bb"
+        android:textColor="#ffffff"
+        android:textSize="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/user"
+        android:layout_width="250dp"
+        android:layout_height="35dp"
+        android:ems="10"
+        android:background="@drawable/edittext"
+        android:textColor="#000000"
+        android:paddingLeft="20dp"
+        android:textColorHint="#000000"
+        android:inputType="textPersonName"
+        android:hint="Enter your username"
+        android:layout_marginTop="35dp"
+        android:layout_below="@+id/bsk"
+        android:layout_alignLeft="@+id/email"
+        android:layout_alignStart="@+id/email" />
+
+    <EditText
+        android:id="@+id/pass"
+        android:layout_width="250dp"
+        android:layout_height="35dp"
+        android:ems="10"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:hint="Enter your password"
+        android:textColorHint="#000000"
+        android:background="@drawable/edittext"
+        android:textColor="#000000"
+        android:inputType="textPassword"
+        android:layout_below="@+id/email"
+        android:layout_alignLeft="@+id/email"
+        android:layout_alignStart="@+id/email"
+        android:layout_marginTop="33dp" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="250dp"
+        android:layout_height="35dp"
+        android:ems="10"
+        android:textColorHint="#000000"
+        android:background="@drawable/edittext"
+        android:textColor="#000000"
+        android:paddingLeft="20dp"
+        android:hint="example@xmail.com"
+        android:inputType="textEmailAddress"
+        android:layout_marginTop="32dp"
+        android:layout_below="@+id/user"
+        android:layout_toRightOf="@+id/bsk"
+        android:layout_toEndOf="@+id/bsk" />
+
+    <Button
+        android:id="@+id/signup"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Signup"
+        android:background="@drawable/oval"
+        android:textSize="30dp"
+        android:padding="20dp"
+        android:layout_marginTop="66dp"
+
+        android:layout_below="@+id/pass"
+        android:layout_alignLeft="@+id/bsk"
+        android:layout_alignStart="@+id/bsk" />
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Reset"
+        android:background="@drawable/oval"
+        android:textSize="30dp"
+        android:padding="20dp"
+
+
+        android:layout_alignBaseline="@+id/signup"
+        android:layout_alignBottom="@+id/signup"
+        android:layout_alignRight="@+id/pass"
+        android:layout_alignEnd="@+id/pass" />
+
+</RelativeLayout>

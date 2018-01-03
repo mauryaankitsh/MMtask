@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.aniketkumar.netcamp_app.Game"
+    android:background="@drawable/game">
+
+    <Button
+        android:id="@+id/play"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/bsk"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="14dp"
+        android:background="@drawable/play" />
+
+    <Button
+        android:id="@+id/bsk"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="11dp"
+        android:background="@drawable/bb"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/enter"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:background="@drawable/edittext"
+        android:textSize="25dp"
+        android:paddingLeft="10dp"
+        android:layout_alignBottom="@+id/go"
+        android:layout_toRightOf="@+id/bsk"
+        android:layout_toEndOf="@+id/bsk"
+        android:layout_marginBottom="8dp" />
+
+    <Button
+        android:id="@+id/go"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+
+
+        android:layout_marginTop="47dp"
+        android:background="@drawable/suu"
+        android:layout_below="@+id/play"
+        android:layout_alignLeft="@+id/play"
+        android:layout_alignStart="@+id/play" />
+
+    <Button
+        android:id="@+id/stop"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/replay"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/stop_bpng" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/stop"
+        android:layout_alignRight="@+id/stop"
+        android:layout_below="@+id/stop"
+        android:layout_marginEnd="13dp"
+        android:layout_marginRight="13dp"
+        android:layout_marginTop="63dp" />
+
+    <Button
+        android:id="@+id/replay"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/go"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/rep" />
+
+</RelativeLayout>
