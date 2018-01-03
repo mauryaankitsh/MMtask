@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.aniketkumar.netcamp_app.Magical_player"
+    android:background="@drawable/c">
+
+    <Button
+        android:id="@+id/light"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="LIGHT"
+        android:gravity="center"
+        tools:layout_editor_absoluteX="145dp"
+        tools:layout_editor_absoluteY="89dp"
+        android:background="@drawable/ring"
+        android:layout_alignBaseline="@+id/gravity"
+        android:layout_alignBottom="@+id/gravity"
+        android:layout_alignLeft="@+id/bsk"
+        android:layout_alignStart="@+id/bsk" />
+
+    <Button
+        android:id="@+id/gravity"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="GRAVITY"
+        android:gravity="center"
+        android:background="@drawable/ring"
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="231dp"
+        android:layout_marginBottom="12dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginEnd="14dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/bsk"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="17dp"
+        android:background="@drawable/bb"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="24dp"
+         />
+</RelativeLayout>

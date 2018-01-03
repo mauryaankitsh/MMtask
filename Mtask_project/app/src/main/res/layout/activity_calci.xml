@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="com.example.aniketkumar.netcamp_app.Calci"
+    android:background="@drawable/calculator"
+    >
+    <Button
+        android:id="@+id/back"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+
+        android:layout_alignParentTop="true"
+
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="14dp"
+        android:background="@drawable/bb" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calculator"
+        android:textSize="30dp"
+        android:textColor="#07F5E3"
+        android:textAlignment="center"
+        android:layout_below="@+id/back"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="8dp"
+        android:layout_marginEnd="8dp" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Enter the first Number"
+        android:layout_marginTop="19dp"
+        android:textColor="#07F5E3"
+        android:textColorHint="#ffffff"
+        android:layout_below="@+id/textView3"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:textColor="#07F5E3"
+        android:textColorHint="#ffffff"
+        android:inputType="textPersonName"
+        android:hint="Enter the second  Number"
+        android:layout_below="@+id/editText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="17dp"
+        android:textColor="#07F5E3"
+        android:textSize="25dp"
+        android:layout_below="@+id/editText2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+
+        <Button
+            android:id="@+id/add"
+            android:layout_marginLeft="5dp"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+           android:layout_gravity="center"
+
+            android:background="@drawable/simple"
+            android:text="Add" />
+
+        <Button
+            android:id="@+id/substract"
+            android:layout_marginLeft="20dp"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/simple"
+            android:text="Substract" />
+
+        <Button
+            android:id="@+id/multiply"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="10dp"
+          android:layout_marginLeft="20dp"
+            android:background="@drawable/simple"
+            android:text="Multiply" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+>
+    <Button
+        android:id="@+id/division"
+        android:layout_width="100dp"
+        android:layout_marginLeft="5dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/simple"
+android:layout_marginTop="20dp"
+        android:text="Division"
+         />
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Reset"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+
+        android:background="@drawable/simple"
+      />
+
+    <Button
+        android:id="@+id/resethistory"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/simple"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:text="Reset History"
+
+         />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#07F5E3"
+        android:layout_gravity="center"
+        android:text="History"
+        android:textSize="25dp"
+        android:layout_above="@+id/scrollView4"
+        />
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:id="@+id/scrollView4">
+    <EditText
+        android:id="@+id/history"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:overScrollMode="always"
+        android:scrollbarStyle="insideInset"
+        android:scrollbars="vertical"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/division"
+        android:layout_marginLeft="54dp"
+        android:textColor="#ffffff"
+        android:layout_marginStart="14dp"
+
+        android:ems="10"
+        android:inputType="textMultiLine" />
+</ScrollView>
+
+
+
+
+
+
+</LinearLayout>

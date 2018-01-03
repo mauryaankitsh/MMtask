@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.aniketkumar.netcamp_app">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/mtask"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Second" />
+        <activity android:name=".Third" />
+        <activity android:name=".Forgot" />
+        <activity android:name=".Media_palyer" />
+        <activity android:name=".Calci" />
+        <activity
+            android:name=".Camera"
+            android:label="@string/title_activity_camera"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Quiz" />
+        <activity android:name=".Game" />
+        <activity android:name=".Magical_player" />
+        <activity android:name=".Q1" />
+        <activity android:name=".Q2" />
+        <activity android:name=".Q3" />
+        <activity android:name=".Q4" />
+        <activity android:name=".Q5" />
+        <activity android:name=".Result" />
+        <activity android:name=".Light" />
+        <activity android:name=".Gravity"></activity>
+    </application>
+
+</manifest>

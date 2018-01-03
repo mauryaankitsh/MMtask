@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.aniketkumar.netcamp_app.Result"
+    android:background="@drawable/last"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="70dp"
+        android:textSize="30dp"
+        android:textColor="#000000"/>
+
+    <Button
+        android:id="@+id/tw"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="61dp"
+        android:layout_marginRight="61dp"
+        android:background="@drawable/tw"
+        android:layout_above="@+id/home"
+        android:layout_alignRight="@+id/home"
+        android:layout_alignEnd="@+id/home"
+        android:layout_marginBottom="71dp" />
+
+    <Button
+        android:id="@+id/fb"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:background="@drawable/fb"
+        android:layout_above="@+id/tw"
+        android:layout_alignLeft="@+id/tw"
+        android:layout_alignStart="@+id/tw"
+        android:layout_marginBottom="38dp" />
+
+    <Button
+        android:id="@+id/nc"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/fb"
+        android:layout_alignLeft="@+id/fb"
+        android:layout_alignStart="@+id/fb"
+        android:layout_marginBottom="33dp"
+        android:background="@drawable/nc" />
+
+    <Button
+        android:id="@+id/home"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+
+        android:background="@drawable/home"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="23dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginBottom="26dp" />
+
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+
+
+        android:background="@drawable/logout"
+        android:text="Logout"
+        android:layout_marginLeft="25dp"
+        android:layout_alignBottom="@+id/home"
+         />
+
+
+</RelativeLayout>
